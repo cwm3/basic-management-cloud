@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.cwm3.system.api.factory.RemoteUserFallbackFactory,\
+  com.cwm3.system.api.factory.RemoteLogFallbackFactory
