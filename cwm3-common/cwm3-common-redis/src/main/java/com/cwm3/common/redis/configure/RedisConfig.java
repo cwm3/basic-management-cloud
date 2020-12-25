@@ -1,5 +1,6 @@
 package com.cwm3.common.redis.configure;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.CachingConfigurerSupport;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
@@ -13,13 +14,24 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * redis配置
- * 
+ *
  * @author cwm3
  */
 @Configuration
 @EnableCaching
 public class RedisConfig extends CachingConfigurerSupport
 {
+    public static String appId;
+
+    public RedisConfig() {
+    }
+
+    @Bean
+    public String setAppId(@Value("${redis.name}") String redisApp) {
+        appId = redisApp;
+        return redisApp;
+    }
+
     @Bean
     @SuppressWarnings(value = { "unchecked", "rawtypes", "deprecation" })
     public RedisTemplate<Object, Object> redisTemplate(RedisConnectionFactory connectionFactory)
@@ -40,4 +52,13 @@ public class RedisConfig extends CachingConfigurerSupport
         template.afterPropertiesSet();
         return template;
     }
+
+    public static String getAppId() {
+        return appId;
+    }
+
 }
+
+
+
+
