@@ -17,6 +17,6 @@ public class Cwm3GatewayApplication
     public static void main(String[] args)
     {
         SpringApplication.run(Cwm3GatewayApplication.class, args);
-        System.out.println("若依网关启动成功!");
+        System.out.println( "网关启动成功! ");
     }
 }

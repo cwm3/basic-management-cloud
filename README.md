@@ -1,13 +1,16 @@
 ## 平台简介
 
-若依是一套全部开源的快速开发平台，毫无保留给个人及企业免费使用。
+tomorrow是一套全部开源的快速开发平台，毫无保留给个人及企业免费使用。
 
 * 采用前后端分离的模式，微服务版本前端(基于 [cwm3-Vue](https://gitee.com/y_project/cwm3-Vue))。
 * 后端采用Spring Boot、Spring Cloud & Alibaba。
 * 注册中心、配置中心选型Nacos，权限认证使用Redis。
-* 流量控制框架选型Sentinel。
+* 流量控制框架选型Sentinel，分布式事务选型Seata。
+* 如需不分离应用，请移步 [cwm3](https://gitee.com/y_project/cwm3)，如需分离应用，请移步 [cwm3-Vue](https://gitee.com/y_project/cwm3-Vue)
+* 阿里云折扣场：[点我进入](http://aly.cwm3.vip)，腾讯云秒杀场：[点我进入](http://txy.cwm3.vip)&nbsp;&nbsp;
+* 阿里云优惠券：[点我领取](https://www.aliyun.com/minisite/goods?userCode=brki8iof&share_source=copy_link)，腾讯云优惠券：[点我领取](https://cloud.tencent.com/redirect.php?redirect=1025&cps_key=198c8df2ed259157187173bc7f4f32fd&from=console)&nbsp;&nbsp;
 
-#### 友情链接 [基础管理框架/cwm3-Cloud](https://gitee.com/zhangmrit/cwm3-cloud) Ant Design版本。
+#### 友情链接 [tomorrow/cwm3-Cloud](https://gitee.com/zhangmrit/cwm3-cloud) Ant Design版本。
 
 ## 系统模块
 
@@ -21,6 +24,7 @@ com.cwm3
 ├── cwm3-common          // 通用模块
 │       └── cwm3-common-core                         // 核心模块
 │       └── cwm3-common-datascope                    // 权限范围
+│       └── cwm3-common-datasource                   // 多数据源
 │       └── cwm3-common-log                          // 日志记录
 │       └── cwm3-common-redis                        // 缓存服务
 │       └── cwm3-common-security                     // 安全模块
@@ -37,7 +41,7 @@ com.cwm3
 
 ## 架构图
 
-<img src="https://oscimg.oschina.net/oscnet/up-63c1c1dd2dc2b91d498164d9ee33682a32a.png"/>
+<img src="https://oscimg.oschina.net/oscnet/up-82e9722ecb846786405a904bafcf19f73f3.png"/>
 
 ## 内置功能
 
@@ -104,8 +108,11 @@ com.cwm3
     </tr>
     <tr>
         <td><img src="https://oscimg.oschina.net/oscnet/up-ff9e3066561574aca73005c5730c6a41f15.png"/></td>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-6d73c2140ce694e3de4c05035fdc1868d4c.png"/></td>
+        <td><img src="https://oscimg.oschina.net/oscnet/up-5e4daac0bb59612c5038448acbcef235e3a.png"/></td>
     </tr>
 </table>
 
 
+## tomorrow微服务交流群
+
+QQ群： [![加入QQ群](https://img.shields.io/badge/已满-42799195-blue.svg)](https://jq.qq.com/?_wv=1027&k=yqInfq0S) [![加入QQ群](https://img.shields.io/badge/已满-170157040-blue.svg)](https://jq.qq.com/?_wv=1027&k=Oy1mb3p8) [![加入QQ群](https://img.shields.io/badge/130643120-blue.svg)](https://jq.qq.com/?_wv=1027&k=rvxkJtXK) 点击按钮入群。

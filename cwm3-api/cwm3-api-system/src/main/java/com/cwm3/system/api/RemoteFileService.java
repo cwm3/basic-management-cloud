@@ -12,8 +12,8 @@ import com.cwm3.system.api.factory.RemoteFileFallbackFactory;
 
 /**
  * 文件服务
- *
- * @author ruoyi
+ * 
+ * @author cwm3
  */
 @FeignClient(contextId = "remoteFileService", value = ServiceNameConstants.FILE_SERVICE, fallbackFactory = RemoteFileFallbackFactory.class)
 public interface RemoteFileService

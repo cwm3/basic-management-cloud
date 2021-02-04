@@ -16,6 +16,6 @@ public class Cwm3AuthApplication
     public static void main(String[] args)
     {
         SpringApplication.run(Cwm3AuthApplication.class, args);
-        System.out.println("认证授权中心启动成功!");
+        System.out.println("  认证授权中心启动成功!");
     }
 }

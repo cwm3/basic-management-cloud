@@ -20,6 +20,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.cwm3.common.core.constant.CacheConstants;
 import com.cwm3.common.core.constant.Constants;
 import com.cwm3.common.core.domain.R;
+import com.cwm3.common.core.utils.ServletUtils;
 import com.cwm3.common.core.utils.StringUtils;
 import com.cwm3.common.redis.service.RedisService;
 import com.cwm3.gateway.config.properties.IgnoreWhiteProperties;
@@ -28,7 +29,7 @@ import reactor.core.publisher.Mono;
 /**
  * 网关鉴权
  * 
- * @author ruoyi
+ * @author cwm3
  */
 @Component
 public class AuthFilter implements GlobalFilter, Ordered
@@ -78,7 +79,7 @@ public class AuthFilter implements GlobalFilter, Ordered
         redisService.expire(getTokenKey(token), EXPIRE_TIME);
         // 设置用户信息到请求
         ServerHttpRequest mutableReq = exchange.getRequest().mutate().header(CacheConstants.DETAILS_USER_ID, userid)
-                .header(CacheConstants.DETAILS_USERNAME, username).build();
+                .header(CacheConstants.DETAILS_USERNAME, ServletUtils.urlEncode(username)).build();
         ServerWebExchange mutableExchange = exchange.mutate().request(mutableReq).build();
 
         return chain.filter(mutableExchange);

@@ -8,6 +8,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import com.cwm3.common.core.text.Convert;
+import com.cwm3.common.core.utils.StringUtils;
 
 public class ReUtil
 {

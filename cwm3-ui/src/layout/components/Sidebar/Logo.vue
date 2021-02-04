@@ -35,7 +35,7 @@ export default {
   },
   data() {
     return {
-      title: '基础后台管理系统',
+      title: 'tomorrow管理系统',
       logo: logoImg
     }
   }

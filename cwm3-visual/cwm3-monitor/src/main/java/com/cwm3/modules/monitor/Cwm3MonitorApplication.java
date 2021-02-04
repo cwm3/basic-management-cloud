@@ -16,7 +16,6 @@ public class Cwm3MonitorApplication
     public static void main(String[] args)
     {
         SpringApplication.run(Cwm3MonitorApplication.class, args);
-
-        System.out.println("监控中心启动成功");
+        System.out.println(" 监控中心启动成功 ");
     }
 }

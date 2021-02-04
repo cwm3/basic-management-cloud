@@ -2,8 +2,6 @@ package com.cwm3.common.security.aspect;
 
 import java.lang.reflect.Method;
 import java.util.Collection;
-
-import com.cwm3.system.api.model.LoginUser;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.Around;
@@ -17,6 +15,7 @@ import org.springframework.util.StringUtils;
 import com.cwm3.common.core.exception.PreAuthorizeException;
 import com.cwm3.common.security.annotation.PreAuthorize;
 import com.cwm3.common.security.service.TokenService;
+import com.cwm3.system.api.model.LoginUser;
 
 /**
  * 自定义权限实现

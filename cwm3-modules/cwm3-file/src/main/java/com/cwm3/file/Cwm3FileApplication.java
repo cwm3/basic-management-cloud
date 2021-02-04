@@ -19,6 +19,6 @@ public class Cwm3FileApplication
     public static void main(String[] args)
     {
         SpringApplication.run(Cwm3FileApplication.class, args);
-        System.out.println(" 文件服务模块启动成功 !");
+        System.out.println("(♥◠‿◠)ﾉﾞ  文件服务模块启动成功   ლ(´ڡ`ლ)ﾞ  \n" );
     }
 }

@@ -16,7 +16,7 @@ import reactor.core.publisher.Mono;
 /**
  * 验证码获取
  * 
- * @author ruoyi
+ * @author cwm3
  */
 @Component
 public class ValidateCodeHandler implements HandlerFunction<ServerResponse>

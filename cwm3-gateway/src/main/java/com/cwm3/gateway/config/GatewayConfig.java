@@ -11,7 +11,7 @@ import com.cwm3.gateway.handler.SentinelFallbackHandler;
 /**
  * 网关限流配置
  * 
- * @author ruoyi
+ * @author cwm3
  */
 @Configuration
 public class GatewayConfig

@@ -21,7 +21,7 @@ import com.cwm3.gateway.service.ValidateCodeService;
 /**
  * 验证码实现处理
  *
- * @author ruoyi
+ * @author cwm3
  */
 @Service
 public class ValidateCodeServiceImpl implements ValidateCodeService

@@ -1,19 +1,18 @@
 package com.cwm3.system.api.factory;
 
-import com.cwm3.system.api.RemoteFileService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 import com.cwm3.common.core.domain.R;
-
+import com.cwm3.system.api.RemoteFileService;
 import com.cwm3.system.api.domain.SysFile;
 import feign.hystrix.FallbackFactory;
 
 /**
  * 文件服务降级处理
- *
- * @author ruoyi
+ * 
+ * @author cwm3
  */
 @Component
 public class RemoteFileFallbackFactory implements FallbackFactory<RemoteFileService>

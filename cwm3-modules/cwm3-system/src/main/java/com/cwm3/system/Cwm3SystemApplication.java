@@ -20,6 +20,6 @@ public class Cwm3SystemApplication
     public static void main(String[] args)
     {
         SpringApplication.run(Cwm3SystemApplication.class, args);
-        System.out.println("系统模块启动成功！");
+        System.out.println("系统模块启动成功" );
     }
 }
